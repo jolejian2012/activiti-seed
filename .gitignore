@@ -1,8 +1,12 @@
 HELP.md
 target/
 !.mvn/wrapper/maven-wrapper.jar
-!**/src/main/**
+!**/src/main/java/**
+!**/src/main/resources/static/**
+!**/src/main/resources/templates/**
+!**/src/main/resources/application.yml
 !**/src/test/**
+**/src/main/resources/application-dev.yml
 
 ### STS ###
 .apt_generated
@@ -31,5 +35,5 @@ build/
 .vscode/
 
 ### config ###
-/src/main/resources/application-dev.yml
+activiti-seed/src/main/resources/application-dev.yml
 application-dev.yml
