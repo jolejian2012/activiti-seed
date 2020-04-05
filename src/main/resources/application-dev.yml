@@ -4,3 +4,5 @@ spring:
     url: jdbc:mysql://120.26.51.215:3306/test-act?useUnicode=true&characterEncoding=utf-8&nullCatalogMeansCurrent=true
     username: root
     password: 123456
+
+
