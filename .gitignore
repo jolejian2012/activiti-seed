@@ -31,5 +31,5 @@ build/
 .vscode/
 
 ### config ###
-src/main/resources/application-dev.yml
+/src/main/resources/application-dev.yml
 application-dev.yml
