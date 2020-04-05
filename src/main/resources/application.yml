@@ -1,0 +1,11 @@
+server:
+  port: 8000
+spring:
+  # dev|test|prod
+  profiles:
+    active: dev
+  # Activiti
+  activiti:
+    database-schema-update: true
+    history-level: full
+    db-history-used: true
