@@ -78,6 +78,17 @@ public class ActProcessServiceImpl implements ActProcessService {
         return processDeploymentDTOList;
     }
 
+    public ProcessDeploymentDTO info(String id) {
+        Deployment deployment = this.repositoryService
+                // 创建流程定义查询器
+                .createDeploymentQuery()
+                // 添加流程定义 id 条件
+                .deploymentId(id)
+                // 返回单条数据
+                .singleResult();
+        return new ProcessDeploymentDTO(deployment);
+    }
+
     @Override
     public Result destroy(String deploymentId) {
         try {
